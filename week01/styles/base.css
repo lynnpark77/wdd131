@@ -8,7 +8,15 @@ header {
     background-color:#ccd5ae;
 }
 
+nav {
+    background-color:#e9edc9;
+}
+nav a {
+    list-style:none;
+
+}
+
 .course-title {
     color:black;
-    
+
 }
