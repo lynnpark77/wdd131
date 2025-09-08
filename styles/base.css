@@ -48,6 +48,7 @@ nav a:hover {
 main {
     margin:0 auto 2rem;
     padding: 1rem;  
+    max-width: 800px;
 }
 .name{
     padding: 1rem;
