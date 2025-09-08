@@ -23,7 +23,9 @@ header {
 }
 nav {
     background-color:#588157;
+    margin: 1rem;
     padding: 1rem;
+    border-radius:12px;
 }
 nav ul {
     list-style: none;
@@ -47,6 +49,9 @@ main {
     margin: 0 auto 2rem;
     padding: 1rem;  
 }
+.name{
+    padding: 1rem;
+}
 .grid {
     display:grid;
     grid-template-columns: 2fr 1fr;
@@ -57,6 +62,7 @@ main {
     background-color: white;
     border: 1px solid #dad7cd;
     flex: 1;
+    border-radius:8px;
 }
 .card-title {
     margin: 0;
@@ -66,8 +72,6 @@ main {
     text-align: center;
     border-bottom: 1px solid ;
     border-radius: 8px 8px 0 0;
-
-
 }
 .about_me {
     padding:0.5rem;
