@@ -129,7 +129,8 @@ footer {
     color:white;
 
 }
-
-#lastModified {
-    color:yellow;
+.highlight {
+    color: navy;
+    font-weight: 700;
+    font-family: hebrew;
 }
