@@ -11,16 +11,30 @@ function addScripture() {
     li.textContent = input.value;
     deleteButton.textContent = '❌'
 
-    li.append(deleteButton);
-    list.append(li);
 
-    if (input.value.trim() !== "") {
-        return;
-    }
+    deleteButton.setAttribute('aria-label', 'Remove ${input.value}')
+    deleteButton.title = 'Remove ${input.value}';
+
+    deleteButton.addEventListener('click', () => {
+        list.removeChild(li);
+        input.focus();
+
+    });
+
+
+    li.append(deleteButton);
+    list.append(li);   
 }
 
-    deleteButton.addEventListener('click',() => {
-    list.removeChild(li);
+button.addEventListener('click', () => {
+    const value = input.value.trim();
+    if (input.value.trim() !== "") {
+        input.focus();
+        return;
+    }
+    const li = createListItem(value);
+    list.append(li);
+    input.value = '';
     input.focus();
-    
-    });
+
+});
