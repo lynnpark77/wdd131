@@ -30,6 +30,9 @@ h1 {
     padding: 1rem;
 
 }
+header.hide-title #side-title {
+    display : none;
+}
 
 nav {
     margin: 0 auto;
