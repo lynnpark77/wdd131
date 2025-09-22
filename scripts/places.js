@@ -16,3 +16,6 @@ let formatted = lastModified.toLocaleString("en-GB", {
 });
 
 document.getElementById("lastModified").textContent = formatted;
+
+const calculateWindChill = document.querySelector("#wind-chill");
+

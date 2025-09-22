@@ -1,18 +1,69 @@
 @media (max-width : 640px) {
-    .hero img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    section h2, p {
-        text-align : center;
-        display: block
-    }
-    footer {
-        width : 100%;
-        padding :20px;
+    .hero {
+        display : block;
+        background-color: #c5283d;
+        padding: 0.5rem;
         margin: 0 0.3rem;
     }
+    .hero img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display : block;
+    }
+    .data {
+        margin : 0 0.3rem;
+        padding : 10px; 
+        border : 1px solid var(--primary-color);
+        border-bottom: none;
+    }
+    .data h2 {
+        text-align: center;
+        padding : 10px ;
+    }
+    
+    .data p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5px 0;
+        gap: 10px;
+        font-size: 1.1rem;
+    }
 
+    .data span {
+        text-align: right;
+    }
+
+    .weather {
+        background-color: var(--bg-color);
+        padding: 10px;
+        margin : 0 0.3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid var(--primary-color);
+    }
+    .weather h2 {
+        padding : 10px;
+    }
+
+    .weather-icon img {
+        width: 100px;
+        height: 100px;
+       
+    }
+
+    .weather p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5px 0;
+        gap: 10px;
+        font-size: 1.1rem;
+
+    }
+
+    .weather span {
+        text-align: right;
+    }
     
 }

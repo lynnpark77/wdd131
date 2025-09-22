@@ -22,6 +22,7 @@ header {
     text-align: center;
 }
 
+@media (min-width : 640px){
 .hero {
     background-color: var(--secondary-color);
     position: relative;
@@ -86,9 +87,9 @@ header {
     content : "🌤️";
     margin-left: 1rem;
 }
-.weather-icon img {
-    width: 100px;
-    height: 100px;
+
+.weather-icon {
+    display : none;
 }
 .weather p {
     display: grid;
@@ -102,7 +103,7 @@ header {
 .weather span {
     text-align: right;
 }
-
+}
 
 footer {
     text-align: center;
@@ -111,5 +112,4 @@ footer {
     font-size: 1.2rem;
     padding : 20px;
     margin : 0 0.3rem;
-
 }
