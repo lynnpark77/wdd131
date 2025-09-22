@@ -10,17 +10,51 @@
     <link rel="stylesheet" href="styles/place.css" />
     <link rel="stylesheet" href="styles/place-large.css" />
     <script src="scripts/places.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-
+        <h1>South Korea</h1>
     </header>
     <main>
-        
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 800px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="South Korea" width="500" height="250">
+            </picture>
+        </div> 
+        <section class="data" >
+            <h2>Data</h2>
+            <br>
+            <p><span class="label" >Area:</span>  100,410 km² </p>
+            <p><span class="label" >Population:</span>  51.7 million </p>
+            <p><span class="label" >Capital:</span>  Seoul </p>
+            <p><span class="label" >Language:</span>  Hangul</p>
+            <p><span class="label" >Currency:</span>  Korean Won</p>
+            <p><span class="label" >Time Zone:</span>  UTC +9 </p>
+            <p><span class="label" >Calling Code :</span>  +82 </p>
+            <p><span class="label" >Internet TLD :</span>  .kr </p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <img src="images/sunny-icon.svg" alt="Weather Icon">
+            </div>
+            <br>
+            <p><span class="label">Temperature:</span>20℃</p>
+            <p><span class="label">Condition:</span>Partly Cloudly</p>
+            <p><span class="label">Wind:</span>2km/h</p>
+            <p><span class="label">Wind Chill:</span>19.4℃</p>
+        </section>
     </main>
-    <footer>
-        
-    </footer>
-    
+    <footer class="site-footer">
+        <p>&copy;<span id="currentyear"> </span><span class="emoji"> 👩🏻‍💻 </span> Hyeyoung Park <span class="emoji">
+                👩🏻‍💻
+            </span> South Korea </p><br>
+        <p>Last Modification: <span id="lastModified"></span> </p>
+    </footer> 
 </body>
 </html>
