@@ -59,11 +59,14 @@
         margin: 5px 0;
         gap: 10px;
         font-size: 1.1rem;
+        text-align: left;
 
     }
-
     .weather span {
         text-align: right;
     }
-    
+
+    #windChill {
+        text-align: left;
+    }
 }

@@ -99,10 +99,13 @@ header {
     font-size: 1.1rem;
 
 }
- 
 .weather span {
     text-align: right;
+} 
+#windChill {
+    text-align: left;
 }
+
 }
 
 footer {
