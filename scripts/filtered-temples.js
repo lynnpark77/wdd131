@@ -90,7 +90,7 @@ const temples = [
         dedicated: "1985,December, 14",
         area: 28057,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x640/seoul-korea-temple-lds-417894-wallpaper.jpg"
+            "https://www.churchofjesuschrist.org/imgs/c85632672919c0424997855308294168fc7a226f/full/1920%2C/0/default"
     },
     {
         templeName: "Laie Hawaii",
@@ -100,20 +100,13 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/400x250/laie-temple-775370-wallpaper.jpg"       
     },
-    {
-        templeName: "Anchorage Alaska Temple",
-        location: "Anchorage, Alaska",
-        dedicated: "1999, January, 9",
-        area: 11937,
-        imageUrl:
-            "https://www.churchofjesuschrist.org/imgs/9591632feb8a8e4221de920d9bf78b23b950a5e0/full/500%2C/0/default"
-    }
+
 ];
 
 createTempleCard();
 
 function createTempleCard() {
-    temples.foreach((temple) => {
+    temples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -121,7 +114,7 @@ function createTempleCard() {
         let area = document.createElement("p");
         let img = document.createElement("img");
 
-        name.textcontent = temple.templeName;
+        name.textContent = temple.templeName;
         location.innerHTML = `<span class ="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class = "label">Dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class = "label">Size:</span> ${temple.area}sq ft`;

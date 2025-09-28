@@ -96,7 +96,12 @@ h2 {
     margin: 1rem;
     text-align: center;
 }
-
+section {
+    background-color: #cedee9;
+    padding: 1rem;
+    border: 1px solid #cedee9;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
 .container {
     display : grid;
     grid-template-columns: 1fr;
@@ -104,12 +109,19 @@ h2 {
     justify-content: center;
     padding: 1rem;
     margin: 1rem;
+    text-align: center;
 }
+ .container img {
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 250px;
+ }
 
 footer {
     background-color: #496a81;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 0;
     text-align: center;
     color: white;
     font-weight: 700;
