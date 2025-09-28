@@ -122,15 +122,18 @@ section {
     object-fit: cover;
     display: block;
  }
-
-footer {
-    height : 120px;
-    background-color: #496a81;
-    padding: 0.5rem;
-    margin-top: 2rem;
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size: 1.2rem;
+@media (max-width: 640px){
+ 
+    footer {
+            height: 100px;
+            background-color: #496a81;
+            padding: 0.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
 }
+
 
