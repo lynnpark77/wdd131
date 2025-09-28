@@ -38,8 +38,10 @@
         text-align: center;
     }
     .container img {
-        width: 400px;
+
+        width:400px;
         height: 250px;
+        display: block;
     }
 
 }
