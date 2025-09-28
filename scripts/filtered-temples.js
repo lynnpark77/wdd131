@@ -87,7 +87,7 @@ const temples = [
     {
         templeName: "Seoul South Korea",
         location: "Seoul, South Korea",
-        dedicated: "1985,December, 14",
+        dedicated: "1985, December, 14",
         area: 28057,
         imageUrl:
             "https://www.churchofjesuschrist.org/imgs/c85632672919c0424997855308294168fc7a226f/full/1920%2C/0/default"
@@ -103,10 +103,42 @@ const temples = [
 
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+const homeLink = document.querySelector("#home");
+const oldTemples = document.querySelector("#oldtemples");
+const newTemples = document.querySelector("#newtemples");
+const largeTemples = document.querySelector("#largetemples");
+const smallTemples = document.querySelector("#smalltemples");
+
+homeLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    createTempleCard(temples);
+});
+
+oldTemples.addEventListener("click", (e) => {
+    e.preventDefault();
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900));
+});
+
+newTemples.addEventListener("click", (e) => {
+    e.preventDefault();
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000));
+});
+
+largeTemples.addEventListener("click", (e) => {
+    e.preventDefault();
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+smallTemples.addEventListener("click", (e) => {
+    e.preventDefault();
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+ 
+function createTempleCard(filteredTemples) {
+    document.querySelector(".container").innerHTML = "";
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
