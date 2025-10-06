@@ -49,17 +49,19 @@ h3 {
 
 #logo {
     margin: 2rem;
+    width: 80%;
 }
 
 #color-scheme {
     margin: 2rem;
     border: 1px solid black;
     border-radius: 6px;
+    width:90%;
 }
 
 #wireframe {
     display: block;
-    width: 400px;
+    width: 90%;
     justify-content: center;
     align-items: center;
     margin-left: 30px;
