@@ -10,16 +10,88 @@
     <link rel="stylesheet" href="styles/siteplan.css" />
     <link rel="stylesheet" href="styles/siteplan-large.css" />
     <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
+        <h1>My Website Planning Document</h1>
 
     </header>
     <main>
-
-    </main>
-    <footer>
+        <div class="card-container">
+        <section class="card">
+            <h2>🔸 Site Name 🔸</h2>
+            <p>Name : <strong>Korea Travel Club</strong>
+            <br>This site introduces places in South Korea for tourist to enjoy visiting
+            <br>Optional domain : k-travelclub.com
+            <img id="logo" src="images/logo.png" alt="Site Logo" width="300" height="auto" >
+            </p>
+        </section>
         
+        <section class="card">
+            <h2>🔸 Site Purpose 🔸</h2>
+            <p>The site provides an information for places to visit in South Korea. The information includes good places to stay, eat,
+            and how to get there and around. It also recommends different courses according to the duration of stay. There is
+            membership information form for exclusive services.</p>
+        </section>
+    
+        <section class="card">
+            <h2>🔸 Scenarios 🔸</h2>
+            <p>
+                <ul>
+                    <li>Where are some good places outside of the capital city to travel?</li>
+                    <li>What are some good accomodations around the places?</li>
+                    <li>What are some good food that you can eat around each destinations?</li>
+                    <li>How do you get around when traveling in the country?</li>
+                </ul>
+            </p>
+        </section>
+  
+        <section class="card">
+            <h2>🔸 Color Scheme 🔸</h2>
+            <img id="color-scheme" src="images/color-scheme.png" alt="color-scheme" width="400" height="auto">
+            <p>
+                <ul>
+                    <li>Header : #136F63</li>
+                    <li>Footer : #032B43</li>
+                    <li>Background color for the sections: #3F88C5</li>
+                    <li>Accent color: #D00000, #FFBA08</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>🔸 Typography 🔸</h2>
+            <p>
+                <ul>
+                    <li>Header, footer, : Merriweather, Serif fonts</li>
+                    <li>Paragraphs : Roboto, San serif fonts</li>
+                </ul>
+            </p>
+        </section>
+        
+        <section class="card">
+            <div class="view">
+            <h2>🔸 Wireframe 🔸</h2>
+            <h3>Desktop view</h3>
+            <img id="wireframe" src="images/large.png" alt="desktop-view">
+            </div>
+            <div class="view">
+            <h3>Mobile view</h3>
+            <img id="wireframe" src="images/mobile.png" alt="mobile-view">
+            </div>
+        </section>
+        
+    </main>
+    <footer class="site-footer">
+        <p>&copy;<span id="currentyear"> </span><span class="emoji"> 👩🏻‍💻 </span> Hyeyoung Park <span class="emoji">
+                👩🏻‍💻
+            </span> South Korea </p>
+        <p>Last Modification: <span id="lastModified"></span> </p>
     </footer>
     
 </body>

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    font-family: "Merriweather", serif;
+    background-color: #136F63;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    background-color: #FFBA08;
+}
+
+.card {
+    width: 30%;
+
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    background-image: linear-gradient(#950303,#950303) ;
+    box-shadow: 1px 1px 4px #999;
+    color: white;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 400px;
+    margin: 1rem;
+}
+
+p,ul{
+    width: 300px;
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Merriweather", serif;
+    margin: 2rem;
+}
+
+#logo {
+    margin: 2rem;
+}
+
+#color-scheme {
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+#wireframe {
+    display: block;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #032B43;
+    color: white; 
+}
+.site-footer p {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
