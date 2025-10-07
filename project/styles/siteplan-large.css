@@ -59,7 +59,7 @@ h3 {
     width:90%;
 }
 
-#wireframe {
+#wireframe1,#wireframe2 {
     display: block;
     width: 90%;
     justify-content: center;
