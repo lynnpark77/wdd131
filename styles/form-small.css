@@ -71,9 +71,14 @@ textarea{
     display: block;
     border-radius: 6px;
 }
+
 #review {
     width: 100%;
     max-width: 525px;
+}
+
+.optional {
+    color: navy;
 }
 
 input[type='submit'] {
