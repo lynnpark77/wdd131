@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Hyeyoung Park">
+    <meta name="description"
+        content="WDD 131 Dynamic Web Fundamentals project page | Hyeyoung Park | Product Review Form">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sansita:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="product">Product Name
+                <label>
+                <select id="product" name="product-list" required>
+                    <option value="">Choose a Product ...</option>
+                </select>
+                </label>
+            </div>
+            
+            <div class="rating">Over Rating
+            <div class="rating-group">
+                <label class="rating-option"> ✩ <input id="1star" type="radio" name="rating" required></label>
+                <label class="rating-option"> ✩✩ <input id="2star" type="radio" name="rating" required></label>
+                <label class="rating-option"> ✩✩✩ <input id="3star" type="radio" name="rating" required></label>
+                <label class="rating-option"> ✩✩✩✩ <input id="4star" type="radio" name="rating" required></label>
+                <label class="rating-option"> ✩✩✩✩✩ <input id="5star" type="radio" name="rating" required></label>
+            </div>
+            </div>
+
+            <div>Date of Installation
+            <label><input id="date" type="date" name="installDate" required></label>
+            </div>
+
+            <div class="features">Which features did you find useful in the product?
+                <p>(Check all the apply)</p>
+                <label class="checkbox"><input id="durability" type="checkbox" name="durability" value="yes" required>Durability</label>
+                <label class="checkbox"><input id="easeOfUse" type="checkbox" name="easeOfUse" value="yes" required>Ease of Use</label>
+                <label class="checkbox"><input id="performance" type="checkbox" name="performance" value="yes" required>Performance</label>
+                <label class="checkbox"><input id="design" type="checkbox" name="design" value="yes" required>Design</label>
+            </div>
+
+            <div class="textarea"> Written Review <span style="color:navy;">(Optional)</span>
+                <textarea id="review" name="review" rows="6" cols="60"></textarea>
+            </div>
+
+            <div class="name"> Your Name <span style="color:navy;">(Optional)</span>
+            <label><input id="userName" type="text" name="textbox"></label>
+            </div>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+    <footer class="site-footer">
+        <p>&copy;<span id="currentyear"> </span><span class="emoji"> 🌼 </span> Hyeyoung Park <span class="emoji">
+                🌼
+            </span> South Korea </p>
+        <p>Last Modification: <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
