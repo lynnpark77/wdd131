@@ -21,11 +21,11 @@ main{
 }
 
 p {
-    padding : 1rem;
+    padding : 2rem;
 }
 
 div {
-    padding: 0.75rem;
+    padding: 1.5rem;
 }
 
 select,
@@ -85,13 +85,17 @@ input[type='submit'] {
     font-size: 18px;
     background-image: linear-gradient(#efdb23,rgb(179, 176, 9));
     align-items: center;
-    margin: 1rem;
-    padding: 0.75rem;
+    margin: 0 1.75rem 1.75rem;
+    padding: 1rem;
     width: 100%;
     max-width: 522px;
     border: none;
     border-radius: 8px;
     box-shadow: 1px 1px 4px black;
+}
+
+select, input:required {
+    border: solid 2px red;
 }
 
 footer {
