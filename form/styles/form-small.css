@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-style: "Roboto", san-serif;
     font-weight:bold;
+
 }
 
 header {
@@ -16,6 +17,11 @@ header {
 
 main{
     background-color: #999;
+    font-size: 18px;
+}
+
+p {
+    padding : 1rem;
 }
 
 div {
