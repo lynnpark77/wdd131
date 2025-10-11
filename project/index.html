@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Travel Club Home</title>
+    <meta name="author" content="Hyeyoung Park">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals project page | Hyeyoung Park | Korea Travel Club Site">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+            <a href="http://https://lynnpark77.github.io/wdd131/project/index.html">
+                <img id="logo" src="images/logo.webp" alt="logo">
+            </a>
+            <nav>
+                <button type="button" id="menu"></button>
+                <ul class="navigation">
+                    <li><a href="http://lynnpark77.github.io/wdd131/project/index.html">Home</a></li>
+                    <li><a href="http://lynnpark77.github.io/wdd131/project/courses.html">Courses</a></li>
+                    <li><a href="http://lynnpark77.github.io/wdd131/project/info.html">Info</a> </li>
+                    <li><a href="#">Log In</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main> 
+        <div class="hero">
+            <h1>Discover South Korea</h1>
+            <p>Joint the K-Travel Club and explore hidden gems across the country</p>
+            <a href="#explore" class="btn">Explore Now</a>
+        </div>
+        
+        <div class="form">
+            <h2>Sign Up Form</h2>
+            <form id="contactForm">
+                <label>User Name*:<input type="text" name="userName" placeholder="User Name" required></label>
+                <label>Email*:<input type="email" name="email" placeholder="Email" required></label>
+                <label>Password*:<input type="password" name="password" placeholder="Password" required></label>            
+            </form>
+            <div><input type="submit" value="Sign Up"></div>
+        </div>
+        
+        <section class="infoList">
+            <div class="card">
+                <img src="images/temple.webp" alt="temple">
+                <h3>Places to Go</h3>
+                <p>Find your next adventure among Korea’s most beautiful and inspiring spots.</p>
+            </div>
+            <div class="card">
+                <img src="images/bibimbap.webp" alt="bibimbap">
+                <h3>Things to Eat</h3>
+                <p>Savor authentic flavors that tell the story of Korean culture.</p>
+            </div>
+            <div class="card">
+                <img src="images/market.webp" alt="market">
+                <h3>Things to Buy</h3>
+                <p>Shop unique finds and keepsakes that make your trip unforgettable.</p>
+            </div>
+           
+
+        </section>
+
+
+
+    </main>
+    <footer class="site-footer">
+        <p>&copy;<span id="currentyear"> </span><span class="emoji"> 🌼 </span> Hyeyoung Park <span class="emoji">
+                🌼
+            </span> South Korea </p>
+        <p>Last Modification: <span id="lastModified"></span> </p>
+    </footer>
+    
+</body>
+</html>
