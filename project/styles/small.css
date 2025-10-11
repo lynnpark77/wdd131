@@ -116,10 +116,11 @@ div.hero {
 }
 
 .form {
+    width: 90%;
+    margin: 2rem;
     padding: 1rem;
     border : 2px solid black;
     border-radius: 8px;
-
 }
 
 input[type='text'],
