@@ -1,0 +1,20 @@
+.hero-course {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container img {
+
+    width: 400px;
+    height: 250px;
+    display: block;
+}
+
