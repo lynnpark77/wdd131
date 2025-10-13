@@ -79,6 +79,19 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 });
 
+const exploreLink = document.getElementById("exploreBtn");
+const selectCourse = document.getElementById("course");
+
+selectCourse.addEventListener("change", () => {
+    const selected = courses.find(c => c.name === selectCourse.value);
+    if (selected) {
+        exploreLink.href = selected.URL;
+        exploreLink.target = "_blank";
+    } else {
+        exploreLink.href = "#";
+    }
+});
+
 
 
 const visitsDisplay = document.querySelector(".visits");
