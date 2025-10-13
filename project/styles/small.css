@@ -94,6 +94,14 @@ main {
 h1, h2, p, a  {
     padding: 1rem;
 }
+.tour {
+    padding: 1rem;
+}
+
+select {
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
 .btn {
     display: inline-block;
     text-decoration: none;

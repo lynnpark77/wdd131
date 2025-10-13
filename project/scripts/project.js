@@ -26,6 +26,59 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+const courses = [
+    {
+        name: "Seoul Must Do Tour",
+        location: "Seoul",
+        imageURL: "images/destination1.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=251"
+    },
+    {
+        name: "Palaces & Hanok Tour",
+        location: "Seoul",
+        imageURL: "images/destination2.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565465"
+    },
+    {
+        name: "Bukchon Food Tour",
+        location: "Seoul",
+        imageURL: "images/destination3.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565466"
+    },
+    {
+        name: "Haeundae Beach Tour",
+        location: "Busan",
+        imageURL: "images/destination4.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565488"
+    },
+    {
+        name: "Busan Hotspot Tour",
+        location: "Busan",
+        imageURL: "images/destination5.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565469"
+
+    },
+    {
+        name: "Busan Coastal Food Tour",
+        location: "Busan",
+        imageURL: "images/destination6.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565495"
+    }
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tourSelect = document.getElementById("course");
+
+    courses.forEach(course => {
+        const option = document.createElement("option");
+
+        option.value = course.name;
+        option.textContent = course.name;
+
+        tourSelect.appendChild(option);
+    })
+});
+
 const visitsDisplay = document.querySelector(".visits");
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
@@ -40,11 +93,6 @@ numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
 
-const courses = [
-    {
-        courseName: "Family Trip",
 
-            
-        
-    }
-];
+
+
