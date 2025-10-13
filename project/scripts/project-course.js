@@ -26,75 +26,75 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+document.querySelector("main").style.display = "block";
+
 const courses = [
     {
         name: "Seoul Must Do Tour",
         location: "Seoul",
-        imageURL: "images/destination1.webp",
+        imageUrl: "images/destination1.webp",
         URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=251"
     },
     {
         name: "Palaces & Hanok Tour",
         location: "Seoul",
-        imageURL: "images/destination2.webp",
+        imageUrl: "images/destination2.webp",
         URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565465"
     },
     {
         name: "Bukchon Food Tour",
         location: "Seoul",
-        imageURL: "images/destination3.webp",
+        imageUrl: "images/destination3.webp",
         URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565466"
     },
     {
         name: "Haeundae Beach Tour",
         location: "Busan",
-        imageURL: "images/destination4.webp",
+        imageUrl: "images/destination4.webp",
         URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565488"
     },
     {
         name: "Busan Hotspot Tour",
         location: "Busan",
-        imageURL: "images/destination5.webp",
+        imageUrl: "images/destination5.webp",
         URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565469"
 
     },
     {
         name: "Busan Coastal Food Tour",
         location: "Busan",
-        imageURL: "images/destination6.webp",
+        imageUrl: "images/destination6.webp",
         URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565495"
     }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
-    const tourSelect = document.getElementById("course");
 
-    courses.forEach(course => {
-        const option = document.createElement("option");
+createCourseCard(courses);
 
-        option.value = course.name;
-        option.textContent = course.name;
+function createCourseCard(filteredCourses) {
+    document.querySelector(".container").innerHTML = "";
+    filteredCourses.forEach(course => {
+        let card = document.createElement("section");
+        let img = document.createElement("img");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let link = document.createElement("a");
 
-        tourSelect.appendChild(option);
-    })
-});
+        img.setAttribute("src", course.imageUrl);
+        img.setAttribute("alt", `${course.name}`);
+        img.setAttribute("loading", "lazy");
+        name.textContent = course.name;
+        location.innerHTML = `<span class = "label">Location:</span> ${course.location}`;
+        link.setAttribute("href", `${course.URL}`);
+        link.textContent = "View Details"
+       
 
+        card.appendChild(img);
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(link);
 
+        document.querySelector(".container").appendChild(card);
 
-const visitsDisplay = document.querySelector(".visits");
-
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+    });
 }
-
-numVisits++;
-
-localStorage.setItem("numVisits-ls", numVisits);
-
-
-
-
