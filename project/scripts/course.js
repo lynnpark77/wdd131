@@ -25,9 +25,7 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
-
 document.querySelector("main").style.display = "block";
-
 
 const courses = [
     {
