@@ -75,7 +75,6 @@ const destinationSelect = document.querySelector("#destination");
 destinationSelect.addEventListener("change", () => {
     const selected = destinationSelect.value;
 
-    let filteredCourses;
     if (selected === "all") {
         createCourseCard(courses);
     } else {
