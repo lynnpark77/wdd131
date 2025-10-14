@@ -11,6 +11,9 @@
     text-align: center;
 }
 .container section{
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1/1;
     border: 2px solid #ac0909;
     border-radius: 8px;
     padding: 5%;
