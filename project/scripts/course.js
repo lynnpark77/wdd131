@@ -28,6 +28,7 @@ hamButton.addEventListener('click', () => {
 
 document.querySelector("main").style.display = "block";
 
+
 const courses = [
     {
         name: "Seoul Must Do Tour",
@@ -70,6 +71,20 @@ const courses = [
 
 
 createCourseCard(courses);
+
+const destinationSelect = document.querySelector("#destination");
+
+destinationSelect.addEventListener("change", () => {
+    const selected = destinationSelect.value;
+
+    let filteredCourses;
+    if (selected === "all") {
+        createCourseCard(courses);
+    } else {
+        const filteredCourses = courses.filter(course => course.location === selected);
+        createCourseCard(filteredCourses);
+    }
+});
 
 function createCourseCard(filteredCourses) {
     document.querySelector(".container").innerHTML = "";
