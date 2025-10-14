@@ -86,7 +86,8 @@ function createCourseCard(filteredCourses) {
         name.textContent = course.name;
         location.innerHTML = `<span class = "label">Location:</span> ${course.location}`;
         link.setAttribute("href", `${course.URL}`);
-        link.textContent = "View Details"
+        link.textContent = "View Details";
+        link.classList.add("btn");
        
 
         card.appendChild(img);

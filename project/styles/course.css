@@ -10,11 +10,21 @@
     justify-content: center;
     text-align: center;
 }
+.container section{
+    border: 2px solid #ac0909;
+    border-radius: 8px;
+    padding: 5%;
+    background-color: #ac0909;
+    color: white;
+    margin: 1rem;
+}
 
 .container img {
 
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     display: block;
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
