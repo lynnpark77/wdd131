@@ -1,4 +1,3 @@
-const { courses } = require("./seoul1");
 
 const currentyear = document.querySelector("#currentyear");
 const today = new Date();
@@ -29,7 +28,48 @@ hamButton.addEventListener('click', () => {
 });
 document.querySelector("main").style.display = "block";
 
+const courses = [
+    {
+        name: "Seoul Must Do Tour",
+        location: "Seoul",
+        imageURL: "images/destination1.webp",
+        URL: "https://lynnpark77.github.io/wdd131/project/seoul1.html"
+    },
+    {
+        name: "Palaces & Hanok Tour",
+        location: "Seoul",
+        imageURL: "images/destination2.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565465"
+    },
+    {
+        name: "Bukchon Food Tour",
+        location: "Seoul",
+        imageURL: "images/destination3.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565466"
+    },
+    {
+        name: "Haeundae Beach Tour",
+        location: "Busan",
+        imageURL: "images/destination4.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565488"
+    },
+    {
+        name: "Busan Hotspot Tour",
+        location: "Busan",
+        imageURL: "images/destination5.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565469"
+
+    },
+    {
+        name: "Busan Coastal Food Tour",
+        location: "Busan",
+        imageURL: "images/destination6.webp",
+        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565495"
+    }
+];
+
 createCourseCard(courses);
+
 
 const destinationSelect = document.querySelector("#destination");
 
@@ -53,7 +93,7 @@ function createCourseCard(filteredCourses) {
         let location = document.createElement("p");
         let link = document.createElement("a");
 
-        img.setAttribute("src", course.imageUrl);
+        img.setAttribute("src", course.imageURL);
         img.setAttribute("alt", `${course.name}`);
         img.setAttribute("loading", "lazy");
         name.textContent = course.name;
@@ -71,4 +111,4 @@ function createCourseCard(filteredCourses) {
         document.querySelector(".container").appendChild(card);
 
     });
-}
+};
