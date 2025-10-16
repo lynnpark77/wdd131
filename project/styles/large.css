@@ -55,6 +55,7 @@
     .container {
         display:flex;
         width: 100%;
+        justify-content: space-between;
 
     }
 
@@ -69,7 +70,7 @@
 
    
     .card img {
-            width: 300px;
+            width: 200px;
             margin: 1rem;
             border-radius: 8px;
     

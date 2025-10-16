@@ -32,7 +32,7 @@ const courses = [
         name: "Seoul Must Do Tour",
         location: "Seoul",
         imageUrl: "images/destination1.webp",
-        URL: "project/seoul1.html"
+        URL: "http://lynnpark77.github.io/wdd131/project/seoul1.html"
     },
     {
         name: "Palaces & Hanok Tour",
