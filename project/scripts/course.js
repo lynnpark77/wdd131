@@ -1,3 +1,5 @@
+const { courses } = require("./seoul1");
+
 const currentyear = document.querySelector("#currentyear");
 const today = new Date();
 
@@ -26,47 +28,6 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 document.querySelector("main").style.display = "block";
-
-const courses = [
-    {
-        name: "Seoul Must Do Tour",
-        location: "Seoul",
-        imageUrl: "images/destination1.webp",
-        URL: "http://lynnpark77.github.io/wdd131/project/seoul1.html"
-    },
-    {
-        name: "Palaces & Hanok Tour",
-        location: "Seoul",
-        imageUrl: "images/destination2.webp",
-        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565465"
-    },
-    {
-        name: "Bukchon Food Tour",
-        location: "Seoul",
-        imageUrl: "images/destination3.webp",
-        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565466"
-    },
-    {
-        name: "Haeundae Beach Tour",
-        location: "Busan",
-        imageUrl: "images/destination4.webp",
-        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565488"
-    },
-    {
-        name: "Busan Hotspot Tour",
-        location: "Busan",
-        imageUrl: "images/destination5.webp",
-        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565469"
-
-    },
-    {
-        name: "Busan Coastal Food Tour",
-        location: "Busan",
-        imageUrl: "images/destination6.webp",
-        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=565495"
-    }
-];
-
 
 createCourseCard(courses);
 
@@ -100,7 +61,7 @@ function createCourseCard(filteredCourses) {
         link.setAttribute("href", `${course.URL}`);
         link.textContent = "View Details";
         link.classList.add("btn");
-       
+
 
         card.appendChild(img);
         card.appendChild(name);

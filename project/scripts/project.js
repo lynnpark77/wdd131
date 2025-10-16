@@ -31,7 +31,7 @@ const courses = [
         name: "Seoul Must Do Tour",
         location: "Seoul",
         imageURL: "images/destination1.webp",
-        URL: "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=251"
+        URL: "https://lynnpark77.github.io/wdd131/project/seoul1.html"
     },
     {
         name: "Palaces & Hanok Tour",
