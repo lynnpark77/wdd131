@@ -170,10 +170,15 @@ input[type='submit'] {
     margin:2rem 2rem;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .card {
     background-color: #ac0909;
     border-radius: 8px;
     padding: 1rem;
+    margin : 1rem;
     color: white; 
     text-align: center;
     font-size: 18px;

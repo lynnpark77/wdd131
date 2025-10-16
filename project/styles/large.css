@@ -52,6 +52,12 @@
         
     }
 
+    .container {
+        display:flex;
+        width: 100%;
+
+    }
+
     .card {
         width: 30%;
         height: auto;
@@ -60,5 +66,14 @@
         text-align: center;
         align-items: center;  
     }
+
+   
+    .card img {
+            width: 300px;
+            margin: 1rem;
+            border-radius: 8px;
+    
+        }
+    
     
 }
